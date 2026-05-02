@@ -14,4 +14,13 @@
 
 ## Add todo:
 
+- Grab the todo and the date from the UI.
+- Save the data in an array.
+- Fetch the data from the array to generate the HTML.
+- Render the HTML.
+
 ## Delete todo:
+
+- When the DELETE button is clicked, the associated data should be deleted from the array.
+- HTML should be regenerated on the basis of the data in the array.
+- Render the HTML.

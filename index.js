@@ -8,7 +8,7 @@ document.querySelector(".add-button").addEventListener("click", function () {
 
   // Add todo: generate the HTML:
   html = "";
-  for (i = 0; i < todos.length; i++) {
+  for (let i = 0; i < todos.length; i++) {
     html += `<p>${todos[i].todo} ${todos[i].date} <button id ='delete-btn-${i}'>DELETE</button> </p>`;
   }
   document.querySelector(".todo-list").innerHTML = html;
@@ -16,14 +16,14 @@ document.querySelector(".add-button").addEventListener("click", function () {
   // Delete todo: add event listener to the delete button:
 
   function deleteTodo() {
-    for (i = 0; i < todos.length; i++) {
+    for (let i = 0; i < todos.length; i++) {
       document
         .querySelector(`#delete-btn-${i}`)
         .addEventListener("click", function () {
           console.log("Education is key!");
           todos.splice(i, 1);
           html = "";
-          for (i = 0; i < todos.length; i++) {
+          for (let i = 0; i < todos.length; i++) {
             html += `<p>${todos[i].todo} ${todos[i].date} <button id ='delete-btn-${i}'>DELETE</button> </p>`;
           }
           document.querySelector(".todo-list").innerHTML = html;
@@ -31,5 +31,5 @@ document.querySelector(".add-button").addEventListener("click", function () {
         });
     }
   }
-  deleteTodo;
+  deleteTodo();
 });

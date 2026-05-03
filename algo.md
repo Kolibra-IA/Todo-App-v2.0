@@ -14,6 +14,7 @@
 
 ## Add todo:
 
+- When the ADD button is clicked:
 - Grab the todo and the date from the UI.
 - Save the data in an array.
 - Fetch the data from the array to generate the HTML.

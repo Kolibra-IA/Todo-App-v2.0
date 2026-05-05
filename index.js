@@ -9,7 +9,7 @@ document.querySelector(".add-button").addEventListener("click", function () {
   // Add todo: generate the HTML:
   html = "";
   for (let i = 0; i < todos.length; i++) {
-    html += `<p>${todos[i].todo} ${todos[i].date} <button id ='delete-btn-${i}'>DELETE</button> </p>`;
+    html += `<p><span>${todos[i].todo}</span> <span>${todos[i].date} </span> <button id ='delete-btn-${i}'>DELETE</button> </p>`;
   }
   document.querySelector(".todo-list").innerHTML = html;
 
@@ -24,7 +24,7 @@ document.querySelector(".add-button").addEventListener("click", function () {
           todos.splice(i, 1);
           html = "";
           for (let i = 0; i < todos.length; i++) {
-            html += `<p>${todos[i].todo} ${todos[i].date} <button id ='delete-btn-${i}'>DELETE</button> </p>`;
+            html += `<p><span>${todos[i].todo}</span> <span> ${todos[i].date} </span><button id ='delete-btn-${i}'>DELETE</button> </p>`;
           }
           document.querySelector(".todo-list").innerHTML = html;
           deleteTodo();

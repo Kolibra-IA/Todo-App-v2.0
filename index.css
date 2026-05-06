@@ -10,11 +10,24 @@ p,
 }
 
 .add-button {
-  width: 100px;
+  width: 90px;
+  background-color: rgb(24, 202, 24);
+  color: hwb(0 100% 0%);
 }
 
 input,
 .add-button {
   height: 25px;
   box-sizing: border-box;
+  border: 1px, grey, solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-delete {
+  background-color: rgb(252, 0, 0);
+  color: white;
+  width: 90px;
+  height: 25px;
+  border: 1px solid grey;
 }

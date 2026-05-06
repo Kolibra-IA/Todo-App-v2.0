@@ -27,7 +27,7 @@ function renderTodos() {
   // Add todo: generate the HTML:
   let html = "";
   for (let i = 0; i < todos.length; i++) {
-    html += `<p><span>${todos[i].todo}</span> <span>${todos[i].date}</span> <button id ='delete-btn-${i}'>DELETE</button> </p>`;
+    html += `<p><span>${todos[i].todo}</span> <span>${todos[i].date}</span> <button id ='delete-btn-${i}' class ='btn-delete'>DELETE</button> </p>`;
   }
   document.querySelector(".todo-list").innerHTML = html;
 }
